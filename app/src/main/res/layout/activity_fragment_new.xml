@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <!-- 居中显示Title    在这儿添加TextView   -->
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#1895ca"
+
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameLayout_temp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@drawable/radiobutton_progress"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="资讯"
+                    android:textColor="@drawable/textcolor_button" />
+
+                <RadioButton
+                    android:id="@+id/rb_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/new_hot"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="热点"
+                    android:textColor="@drawable/textcolor_button" />
+
+                <RadioButton
+                    android:id="@+id/rb_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/new_search"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="搜索"
+                    android:textColor="@drawable/textcolor_button" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_cehua"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#fafad2"
+            app:headerLayout="@layout/activity_drawer_ui"
+            app:menu="@menu/drawer"></android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

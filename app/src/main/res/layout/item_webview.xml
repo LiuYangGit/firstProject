@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/item_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#1895ca">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/btn_homeasup_default" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/item_news_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:elevation="5dp"
+            android:src="@drawable/start_webview"
+            app:backgroundTint="#181bca"
+            app:pressedTranslationZ="10dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/item_news_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/item_webview_progressbar_color"
+        android:max="100"
+        android:progress="0" />
+
+    <WebView
+        android:id="@+id/item_news_wv"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"></WebView>
+</LinearLayout>

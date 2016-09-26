@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/bttn_anim_start">
+        <shape>
+            <corners android:radius="20dp"></corners>
+            <solid android:color="#00dddd"></solid>
+        </shape>
+
+    </item>
+
+</layer-list>

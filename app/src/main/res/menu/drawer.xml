@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <!-- android：checkableBehaviod="single"该组只有单选 -->
+        <item android:title=" ">
+            <menu>
+                <item
+
+                    android:id="@+id/drawer_collect"
+                    android:icon="@drawable/star_defult"
+                    android:title="我的收藏"></item>
+            </menu>
+        </item>
+        <menu>
+            <item
+                android:id="@+id/drawer_about"
+                android:icon="@drawable/icon_aboutme"
+                android:title="关于我们"></item>
+            <item
+                android:id="@+id/drawer_setting"
+                android:icon="@drawable/icon_select"
+                android:title="设置"></item>
+        </menu>
+
+    </group>
+</menu>
